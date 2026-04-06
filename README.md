@@ -6,7 +6,7 @@ A real-time ML inference pipeline on AWS. Streams events from Elasticsearch thro
 
 ## Architecture
 
-![Alt Text](Lambda Architecture.png) 
+![Lambda Architecture.png](https://github.com/pkrishna1801/ML-Streaming-Pipeline/blob/main/Lambda%20Architecture.png?raw=true)
 
 ---
 
