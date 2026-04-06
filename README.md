@@ -6,22 +6,7 @@ A real-time ML inference pipeline on AWS. Streams events from Elasticsearch thro
 
 ## Architecture
 
-```
-Elasticsearch → Custom Producer → Kinesis (Raw)
-                                      ↓
-                              Kinesis Analytics (Flink)
-                              + Redis lookup (zip, segments)
-                                      ↓
-                              Kinesis (Enriched)
-                                      ↓
-                                   Lambda
-                                 ↙       ↘
-                          ML REST API   SQS DLQ
-                               ↓
-                           DynamoDB
-
-           CloudWatch monitors all components
-```
+![Alt Text](Lambda Architecture.png) 
 
 ---
 
